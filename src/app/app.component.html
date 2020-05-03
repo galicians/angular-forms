@@ -1,3 +1,14 @@
 <h2>Angular forms</h2>
-<p>A FormControl represents a single input field - it is the smallest unit of an Angular form:</p>
+<p>A <b>FormControl</b> represents a single input field - it is the smallest unit of an Angular form:</p>
 <p><b>TypeScript Object: </b>{{nameControl | json}}</p>
+
+<p><span>Errors: {{nameControl.errors}} </span>
+  <span>Dirty: {{nameControl.dirty}} </span>
+<span>Valid: {{nameControl.valid}}</span></p>
+
+<input type="text" [formControl]="name" />
+
+<h2>FormGroup</h2>
+
+<p>{{personInfo.value | json}}</p>
+
