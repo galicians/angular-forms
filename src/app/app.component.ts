@@ -12,7 +12,7 @@ export class AppComponent  {
   name = this.nameControl.value;
 
   personInfo = new FormGroup({ 
-    firstName: new FormControl("Pablo"), 
+    firstName: new FormControl('Pablos'), 
     lastName: new FormControl("Porta"),
     zip: new FormControl("SE1")
   })

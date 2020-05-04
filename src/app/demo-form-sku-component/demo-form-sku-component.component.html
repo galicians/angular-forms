@@ -1,0 +1,21 @@
+
+
+<div class="ui raised segment">
+  <h3>Simple SKU Form: template</h3>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="ui form">
+    <div>
+        <label for="skuInput">Sku</label>
+      <input  type="text"
+              id="skuInput"
+              placeholder="SKU"
+              name="sku" ngModel>
+    </div>
+    <button type="submit" class="ui button">Submit</button>
+    </form>
+  </div>
+  
+  <button (click)="displayAnswer()">NgForm non-obvious</button>
+  <p *ngIf="display">NgForm does something handy but non-obvious: it includes the form tag in its selector (instead of requiring you to explicitly add ngForm as an attribute). What this means is that if you import FormsModule, NgForm will get automatically attached to any &lt;form&gt; tags you have in your view. This is really useful but potentially confusing because it happens behind the scenes.</p>
+
+  <p><b>Where did NgForm come from in the first place? </b><span *ngIf="display">It came from the NgForm directive</span></p>
+  <p><b>What type of object is ngForm? </b><span *ngIf="display">It's a FormGroup.</span></p>
