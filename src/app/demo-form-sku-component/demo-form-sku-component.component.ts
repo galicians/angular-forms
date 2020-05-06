@@ -9,18 +9,18 @@ import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
   
 export class DemoFormSkuComponentComponent implements OnInit {
   myForm: FormGroup;
+  display = true;
+
   constructor(fb: FormBuilder) { 
      //Takes an object of key-value pairs that specify the FormControls in this group.
     this.myForm = fb.group({
-      'sky': ['ABC123']
+      'sku': ['ABC123']
     })
 
   }
 
-  ngOnInit() {
-  }
-  display = true;
-
+  ngOnInit() {}
+ 
   displayAnswer() {
     this.display = !this.display
   }
