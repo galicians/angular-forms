@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'my-app',
@@ -10,6 +10,9 @@ export class AppComponent  {
 
   nameControl = new FormControl('Pablo');
   name = this.nameControl.value;
+  
+
+  constructor() {}
 
   personInfo = new FormGroup({ 
     firstName: new FormControl('Pablos'), 

@@ -22,5 +22,18 @@
 
 <h3>Reactive Forms: Form Builder</h3>
 
+  <div class="ui raised segment" >
+    <form [formGroup]="myForm" (ngSubmit)="onReactiveSubmit(myForm)">
+      <label for="skuInput">SKU</label>
+      <input  type="text" 
+              id="skuInput"
+              placeholder="SKU"
+              [formControl]="myForm.controls['sku']">
+      <button type="submit"class="ui button">Submit</button>
+    </form>
+  </div>
+          
+
+
 
 
