@@ -19,7 +19,7 @@ export class DemoFormSkuComponentComponent implements OnInit {
     })
 
     this.validatorsForm = fb.group({
-      'val': ['Validators',Validators.required]
+      'val': ['',Validators.required]
     })
     this.val = this.myForm.controls['sku'];
 
@@ -40,6 +40,6 @@ export class DemoFormSkuComponentComponent implements OnInit {
   }
 
   onValSubmit(form) {
-    console.log('form with validators', formatPercent)
+    console.log('form with validators', form)
   }
 }
