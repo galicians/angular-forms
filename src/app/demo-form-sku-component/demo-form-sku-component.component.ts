@@ -11,6 +11,7 @@ export class DemoFormSkuComponentComponent implements OnInit {
   myForm: FormGroup;
   validatorsForm: FormGroup;
   display = true;
+  productName: string;
 
   constructor(fb: FormBuilder) { 
      //Takes an object of key-value pairs that specify the FormControls in this group.
@@ -21,7 +22,7 @@ export class DemoFormSkuComponentComponent implements OnInit {
     this.validatorsForm = fb.group({
       'val': ['',Validators.required]
     })
-    this.val = this.myForm.controls['sku'];
+    this.productName = 'Angular Guide'
 
   }
 

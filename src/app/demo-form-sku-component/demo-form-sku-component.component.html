@@ -52,6 +52,19 @@
     <button type="submit" class="ui button">Submit</button>
   </form>
 
+<p><b>ngModel:</b></p>
+<!-- Submit button with ngModel? -->
+
+<label for="productNameInput">Product Name</label>
+<input  type="text"
+        id="productNameInput"
+        placeholder="Product Name"
+        name="productName"
+        [(ngModel)]="productName">
+        
+        <div class="ui info message">
+          The product name is: {{productName}}
+        </div>
 
 
 
