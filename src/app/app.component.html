@@ -2,8 +2,10 @@
 <p>A <b>FormControl</b> represents a single input field - it is the smallest unit of an Angular form:</p>
 <p><b>TypeScript Object: </b>{{nameControl | json}}</p>
 
+<h3> Error:https://stackoverflow.com/questions/41474011/what-causes-the-control-registeronchange-is-not-a-function-error</h3>
 <p>
-  <span *ngIf="!nameControl.valid">Errors: {{nameControl.errors}} </span>
+
+  <span *ngIf="!nameControl">Errors: {{nameControl.errors}} </span>
   <span>Dirty: {{nameControl.dirty}} </span>
   <span>Valid: {{nameControl.valid}}</span>
 </p>

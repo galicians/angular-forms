@@ -38,4 +38,8 @@ export class DemoFormSkuComponentComponent implements OnInit {
   onReactiveSubmit(form) {
     console.log('Reactive Form', form)
   }
+
+  onValSubmit(form) {
+    console.log('form with validators', formatPercent)
+  }
 }

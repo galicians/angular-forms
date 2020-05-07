@@ -8,7 +8,7 @@ import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
 })
 export class AppComponent  {
 
-  nameControl = new FormControl('Pablo');
+  nameControl = new FormControl(['Pablo']);
   name = this.nameControl.value;
   
 
@@ -22,3 +22,5 @@ export class AppComponent  {
 
 
 }
+
+

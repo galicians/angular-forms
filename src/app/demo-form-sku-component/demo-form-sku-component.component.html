@@ -39,7 +39,14 @@
 <li>Check the status of the validator in the view</li> 
 </ol>
 
-<form [formGroup]="validatorsForm">
+<form [formGroup]="validatorsForm" (ngSubmit)="onValSubmit()">
+  <div class="field">
+    <label for="skuInput">SKU Validation</label>
+    <input  type="text"
+            id="valInput"
+            placeholder="sku validation"
+            [formControl]="validatorsForm.controls['val']">
+    </div>
   </form>
 
 
